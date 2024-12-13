@@ -7,13 +7,13 @@ from typing import Optional
 from sqlalchemy import create_engine
 from sqlalchemy import ForeignKey
 from sqlalchemy import Integer
-from sqlalchemy.orm import (
-    DeclarativeBase,
-    mapped_column,
-    relationship,
-    sessionmaker,
-    Mapped,
-)
+print(sa.__version__ )
+# from sqlalchemy.orm import DeclarativeBase
+from sqlalchemy.orm import declarative_base as DeclarativeBase
+from sqlalchemy.orm import mapped_column
+from sqlalchemy.orm import relationship
+from sqlalchemy.orm import sessionmaker
+from sqlalchemy.orm import Mapped
 
 # extract
 from src.integration.extract.product_catalogue import extract_product_catalogue
